@@ -1,0 +1,73 @@
+.animations-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 20px;
+  background-color: #dee5de;
+  text-align: center;
+  height: 100vh;
+}
+
+.animations-section h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 575px) {
+  .animations-section h1 {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+}
+
+.animation-box {
+  width: 250px;
+  height: 250px;
+  background-color: #4caf50;
+  margin: 20px auto;
+  border-radius: 10px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px 0;
+}
+
+.carousel-item {
+  flex: 0 0 300px;
+  border: 2px solid blue;
+  border-radius: 7px;
+  box-shadow: 20px 20px gray;
+  margin: 10px;
+  scroll-snap-align: center;
+  position: relative;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.carousel-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.video-item {
+  width: 100%;
+  border-radius: 10px;
+}
