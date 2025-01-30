@@ -5,7 +5,6 @@ const HeroSection = () => {
   return (
     <div className="hero-section" id="hero">
       <div className="hero-content ">
-        <h1 className="hero-heading">Welcome to Play Games</h1>
         <p className="hero-para">
           Your ultimate destination for sports and entertainment!
         </p>

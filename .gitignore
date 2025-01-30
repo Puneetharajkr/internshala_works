@@ -23,3 +23,6 @@ yarn-error.log*
 .idea/
 .eslintcache
 .vscode/
+
+# Local Netlify folder
+.netlify
